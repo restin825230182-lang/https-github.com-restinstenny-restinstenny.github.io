@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project 1 - Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      background: #f8f6f2;
+      font-family: "Poppins", sans-serif;
+      margin: 0;
+      padding: 40px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .project-box {
+      background: #fff;
+      border: 3px solid black;
+      border-radius: 25px;
+      width: 90%;
+      max-width: 1100px;
+      padding: 40px;
+      position: relative;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    .project-title {
+      text-align: center;
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .sub-title {
+      font-size: 1.6rem;
+      color: #c53232;
+      font-weight: 600;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    .description {
+      font-size: 1rem;
+      line-height: 1.6;
+      max-width: 600px;
+      margin-bottom: 30px;
+    }
+
+    .image-section {
+      display: flex;
+      gap: 40px;
+      align-items: flex-start;
+      justify-content: center;
+    }
+
+    .image-card {
+      border: 2px solid #c53232;
+      border-radius: 10px;
+      overflow: hidden;
+      text-align: center;
+      background: #fff;
+      width: 45%;
+    }
+
+    .image-card img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .caption {
+      background: #c53232;
+      color: #fff;
+      padding: 10px;
+      font-size: 1rem;
+    }
+
+    .back-btn {
+      position: absolute;
+      top: 25px;
+      right: 30px;
+      background: #c53232;
+      color: #fff;
+      text-decoration: none;
+      padding: 8px 18px;
+      border-radius: 25px;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .back-btn:hover {
+      background: #a92020;
+    }
+  </style>
+</head>
+<body>
+  <div class="project-box">
+    <a href="index.html#projects" class="back-btn">← Back</a>
+    <h1 class="project-title">PROJECT 1</h1>
+    <h2 class="sub-title">ABOUT PROJECT 1</h2>
+    <p class="description">
+      Sistem Perpustakaan Digital Sebuah Universitas dirancang untuk membantu mahasiswa dan dosen dalam mengakses koleksi buku secara online. Sistem ini menyediakan fitur pencarian, peminjaman digital, dan integrasi data akademik agar proses belajar menjadi lebih efisien.
+    </p>
+
+    <div class="image-section">
+      <div class="image-card">
+        <img src="images/project1a.jpg" alt="Project Preview 1">
+        <div class="caption">interface utama</div>
+      </div>
+      <div class="image-card">
+        <img src="images/project1b.jpg" alt="Project Preview 2">
+        <div class="caption">sistem pencarian buku</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

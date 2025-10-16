@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project 1 - Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      background: #f8f6f2;
+      font-family: "Poppins", sans-serif;
+      margin: 0;
+      padding: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      min-height: 100vh;
+    }
+
+    .project-box {
+      background: #fff;
+      border: 3px solid black;
+      border-radius: 25px;
+      width: 80%;
+      max-width: 950px;
+      padding: 30px 40px;
+      position: relative;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      overflow: auto;
+      max-height: calc(100vh - 60px);
+    }
+
+    /* Hapus judul besar di atas */
+
+    .sub-title {
+      font-family: 'Bebas Neue', sans-serif; /* font unik, bergaya poster */
+      font-size: 2.5rem;
+      letter-spacing: 2px;
+      color: #c53232;
+      text-align: center;
+      font-weight: 700;
+      margin-top: 10px;
+      margin-bottom: 25px;
+      text-transform: uppercase;
+      text-shadow: 1px 2px 2px rgba(0,0,0,0.15);
+    }
+
+    .description {
+      font-size: 1rem;
+      line-height: 1.6;
+      max-width: 600px;
+      margin: 0 auto 25px;
+      text-align: center;
+    }
+
+    .image-section {
+      display: flex;
+      gap: 25px;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .image-card {
+      border: 2px solid #c53232;
+      border-radius: 10px;
+      overflow: hidden;
+      text-align: center;
+      background: #fff;
+      width: 42%;
+      max-width: 380px;
+    }
+
+    .image-card img {
+      width: 100%;
+      height: 230px;
+      object-fit: contain;
+      background-color: #fafafa;
+      display: block;
+    }
+
+    .caption {
+      background: #c53232;
+      color: #fff;
+      padding: 10px;
+      font-size: 1rem;
+    }
+
+    .back-btn {
+      position: absolute;
+      top: 25px;
+      right: 30px;
+      background: #c53232;
+      color: #fff;
+      text-decoration: none;
+      padding: 8px 18px;
+      border-radius: 25px;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .back-btn:hover {
+      background: #a92020;
+    }
+
+    @media (max-width: 768px) {
+      .project-box {
+        width: 95%;
+        padding: 20px;
+      }
+
+      .image-card {
+        width: 100%;
+      }
+
+      .image-card img {
+        height: 200px;
+      }
+
+      .sub-title {
+        font-size: 1.8rem;
+      }
+    }
+  </style>
+
+  <!-- Tambah link font unik -->
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="project-box">
+    <a href="index.html#projects" class="back-btn">← Back</a>
+
+    <h2 class="sub-title">ABOUT PROJECT 1</h2>
+    <p class="description">
+      Sistem Perpustakaan Digital Sebuah Universitas dirancang untuk membantu mahasiswa dan dosen dalam mengakses koleksi buku secara online. Sistem ini menyediakan fitur pencarian, peminjaman digital, dan integrasi data akademik agar proses belajar menjadi lebih efisien.
+    </p>
+
+    <div class="image-section">
+      <div class="image-card">
+        <img src="images/project111.png" alt="Project Preview 1">
+        <div class="caption">interface utama</div>
+      </div>
+      <div class="image-card">
+        <img src="images/project11.png" alt="Project Preview 2">
+        <div class="caption">sistem pencarian buku</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
